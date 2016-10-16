@@ -5,12 +5,6 @@ El primer algoritmo analizado fue el algoritmo básico de busqueda, el primero e
 
 \subsection{Analisis de eficiencia teorico}
 
-
-El desarrollo matemático de el analisis de la eficiencia teoríca del codigo del algoritmo que se muestra arriba es el siguiente:
-
-\begin{equation}
-  
-
 Tras hacer pruebas con distintos tamaños de entradas se ha obtenido la siguiente grafica de tiempos, en la cual se enfrenta el tamaño del vector en el que se ha buscado aplicando el algoritmo (eje x) y el tiempo que ha tardado en completarse el algoritmo para cada tamaño.
 
 \begin{figure}[h]
