@@ -34,3 +34,32 @@ Como hemos comprobado en el anterior apartado, en efecto los tiempos de ejecucio
 \end{figure}
 
 Si nos fijamos en la anterior grafica se ve como el proceso de compilacion si que afecta y mucho a las constantes ocultas, que afectan a la eficiencia de nuestro algoritmo, ya que dos implementaciones, la primera de ellas de orden $2*n^{2}$ y la segunda de orden $100*n^{2}$ son de orden $O(n^{2})$, pero como el lector adivinará la primera es mucho mejor ya que su factor multiplicativo es mucho menor, asi observamos que la segunda version en el maximo tamaño de entradas es 1 segundo mas rapida (en otros PC's estos tiempor podrian variar), y esta tendencia se mantendría hasta el infinito.
+
+\subsection{Mejor y Peor Caso}
+%subtitle{Ejercicio 4}
+
+Cuando ejecutamos nuestros programas, estos trabajan sobre datos que cabe esperar que estén desordenados, pero se puede dar el caso en el que estos datos tengan una pecularidad que afecte al tiempo de ejecución.
+
+\subsubsection{Mejor caso}
+
+En este algoritmo, el mejor caso es que el vector de datos esté ordenado, ya que que no tiene que intercambiar ningún elemento, por lo que el tiempo de cómputo es menor.
+
+En la siguiente gráfica, tras hacer pruebas con distintos tamaños de entrada, se ve el tiempo (eje Y) en relación a la entrada de datos (eje X).
+
+\begin{figure}[ht]
+  \centery
+  \includegraphics[width=0.5\textwidth]{#ruta de la imagen#}
+  \caption{Datos de la salida del algoritmo de ordenación por burbuja}
+\end{figure}
+
+\subsubsection{Peor caso}
+
+Este caso se da si el vector de datos de entrada está ordenado inversamente, ya que en cada iteracción habrá que hacer un intercambio, por lo que el tiempo de cómputo es mayor.
+
+Observamos en la siguiente gráfica la compración entre el tiempo (eje Y) respecto del tamaño de datos de la entrada (eje X) del mejor y peor caso.
+
+\begin{figure}[ht]
+  \centery
+  \includegraphics[width=0.5\texwidth]{#ruta de la imagen#}
+  \caption{Datos de la comparación entre mejor y peor caso en el algoritmo bubble sort}
+\end{figure}
