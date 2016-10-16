@@ -8,7 +8,7 @@ El siguiente algoritmo que se ha anañizado ha sido la ordenacion de la burbuja 
 \subsection{Eficiencia empirica}
 Para demostrar que en efecto el tiempo de ejecucion de nuestro algoritmo evoluciona conforme nos ha indicado la eficiencia teorica, se hicieron varias ejecuciones con dicho algoritmo para diferentes tamaños de entradas, obteniendo la siguiente grafica:
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{./Imagenes/burbuja_pela.png}
   \caption{Grafica con los tiempos de ejecucion del algoritmo bubble sort}
@@ -27,7 +27,7 @@ Si procedemos a comprobar como se ajusta la eficiencia teorica con la grafica ob
 \subsection{Influencia del proceso de compilacion en la eficiencia empirica de un algoritmo}
 Como hemos comprobado en el anterior apartado, en efecto los tiempos de ejecucion del algoritmo en cuestion crecen en la medida que predijimos en el calculo teórico de la eficiencia, pero se nos plantea la duda de en que medida el proceso de compilación de nuestro programa, con lo cual se procedio a compilar el mismo programa con el que se habian obtenido los datos de las graficas anteriores, pero ahora se compilo usando el flag -O3 aplicando asi el compilador un mayor grado de optimización a las instrucciones maquina generadas. Tras enfrentar la grafica del programa optimizado a la grafica anterior se obtuvo los siguientes resultados que a continuación analizaremos:
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{./Imagenes/burbuja_vs_eficaz.png}
   \caption{Algoritmo sin optimizavion vs algoritmo con optimizacion}
