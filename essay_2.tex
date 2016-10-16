@@ -24,6 +24,15 @@
 \usepackage[protrusion=true,expansion=true]{microtype} % Better typography
 \usepackage{graphicx} % Required for including pictures
 \usepackage{wrapfig} % Allows in-line images
+\usepackage{float}
+
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
 
 \usepackage[spanish]{babel}
 \selectlanguage{spanish}
@@ -79,10 +88,21 @@ Analisis de eficiencia} % Subtitle
 
 % ------------------------------------------------
 
-\input{sections/ordenacion_burbuja}
+\input{sections/ordenacion_burbuja_final}
 
 %------------------------------------------------
 
+\input{sections/busqueda_binaria}
+
+% ------------------------------------------------
+
+\input{sections/multiplicacion_matrices}
+
+%------------------------------------------------
+
+\input{sections/mergesort}
+
+%-------------------------------------------------
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
