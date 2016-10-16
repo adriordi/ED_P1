@@ -1,6 +1,23 @@
 \section{Bubble sort}
 El siguiente algoritmo que se ha anañizado ha sido la ordenacion de la burbuja o bubble sort, la cual como demostraremos a continuacion es de orden $O(n^{2})$, y se han realizado pruebas con distintas implementaciones asi como en distintos escenarios, como son mejor y peor caso.
 
+El código del Bubble sort es el siguiente:
+
+\begin{lstlisting}
+  void ordenar(int *v, int n) {
+    bool cambio=true;
+    for (int i=0; i<n-1 && cambio; i++) {
+      cambio=false;
+    for (int j=0; j<n-i-1; j++)
+      if (v[j]>v[j+1]) {
+        cambio=true;
+        int aux = v[j];
+        v[j] = v[j+1];
+        v[j+1] = aux;
+      }
+    }
+  }
+
 \subsection{Eficiencia teorica}
 
 \begin{equation}
