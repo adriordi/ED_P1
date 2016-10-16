@@ -2,7 +2,19 @@
 
 Para este ejercicio se pedir diseñar un algoritmo de multiplicacion de matrices cuadradas y evaluar su eficiencia. El algoritmo diseñado es el siguiente:
 
-% code here
+El código de la función que implementa el algoritmo es el siguiente:
+
+\begin{lstlisting}
+  void multiplicar(int **a, int **b, int **result, int tam) {
+    for(int i=0; i < tam; i++){ 
+      for(int j=0; j < tam; j++){
+        for(int k=0; k < tam; k++){
+          result[i][j] += a[i][k]*b[k][j];
+        }
+      }
+    }
+  }
+ \end{lstlisting}
 
 \subsection{Analisis de eficiencia teoríco}
 
