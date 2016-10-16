@@ -26,6 +26,8 @@
 \usepackage{wrapfig} % Allows in-line images
 
 \usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
 
 \usepackage{mathpazo} % Use the Palatino font
 \usepackage[T1]{fontenc} % Required for accented characters
@@ -64,34 +66,23 @@ Analisis de eficiencia} % Subtitle
 
 \begin{document}
 
-\maketitle % Print the title section
-
-%----------------------------------------------------------------------------------------
-%	ABSTRACT AND KEYWORDS
-%----------------------------------------------------------------------------------------
-
-%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
-
-\begin{abstract}
-Morbi tempor congue porta. Proin semper, leo vitae faucibus dictum, metus mauris lacinia lorem, ac congue leo felis eu turpis. Sed nec nunc pellentesque, gravida eros at, porttitor ipsum. Praesent consequat urna a lacus lobortis ultrices eget ac metus. In tempus hendrerit rhoncus. Mauris dignissim turpis id sollicitudin lacinia. Praesent libero tellus, fringilla nec ullamcorper at, ultrices id nulla. Phasellus placerat a tellus a malesuada.
-\end{abstract}
-
-\hspace*{3,6mm}\textit{Keywords:} lorem , ipsum , dolor , sit amet , lectus % Keywords
-
-\vspace{30pt} % Some vertical space between the abstract and first section
-
+\maketitle % Print the title 
 %----------------------------------------------------------------------------------------
 %	ESSAY BODY
 %----------------------------------------------------------------------------------------
 
-\input{sections/introduction}
+\input{sections/introduccion}
 
 %------------------------------------------------
 
-\input{sections/ejercicio1}
+\input{sections/busqueda_lineal}
+
+% ------------------------------------------------
+
+\input{sections/ordenacion_burbuja}
 
 %------------------------------------------------
-\input{sections/conclusion}
+
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------

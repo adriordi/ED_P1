@@ -13,6 +13,13 @@ El desarrollo matemático de el analisis de la eficiencia teoríca del codigo de
 Tras hacer pruebas con distintos tamaños de entradas se ha obtenido la siguiente grafica de tiempos, en la cual se enfrenta el tamaño del vector en el que se ha buscado aplicando el algoritmo (eje x) y el tiempo que ha tardado en completarse el algoritmo para cada tamaño.
 
 \begin{figure}[h]
-  \includegraphics[width=0.5\textwidth]{./Imagenes/binaria_data.png}
+  \includegraphics[width=0.5\textwidth]{./Imagenes/busqueda_lineal.png}
   \caption{Datos de la salida del algoritmo de busqueda lineal}
+\end{figure}
+
+Como se aprecia el crecimiento de los tiempos de ejecucion del algoritmo es lineal conforme crece el tamaño de las entradas del problema. Tras obtener los datos anteriores, se uso la funcion fit de gnuplot para ajustar dicha salida con una funcion, para ver como se corresponde el tiempo teórico y el empirico, para ello se ajusto a la funcion $ f(x) = a*x$, de tal modo que a nos indica la constante oculta del algoritmo. La grafica resultante es la siguiente:
+
+\begin{figure}[h]
+  \includegraphics[width=0.5\textwidth]{./Imagenes/busqueda_lineal_ajustada.png}
+  \caption{Salida del algoritmo de busqueda lineal ajustada a $f(x)$}
 \end{figure}
