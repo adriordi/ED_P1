@@ -1,0 +1,12 @@
+\section{Multiplicacion matrices}
+
+Para este ejercicio se pedir diseñar un algoritmo de multiplicacion de matrices cuadradas y evaluar su eficiencia. El algoritmo diseñado es el siguiente:
+
+% code here
+
+\subsection{Analisis de eficiencia teoríco}
+
+El analisis de eficiencia muestra que al ser tres bubles anidados el orden es $n^{3}$ y su desarrollo es el siguiente:
+\begin{equation}
+T(n)=\sum_{i=0}^{n}(\sum_{j=0}^{n}(\sum_{k=0}^{n}(1)))=n*\sum_{j=0}^{n}(\sum_{k=0}^{n}(1))=n^{2}*\sum_{k=0}^{n}(1)=n^{3}
+\end{equation}
