@@ -1,6 +1,26 @@
 \section{Busqueda binaria}
 En otro ejercicio de los propuestos hemos tenido que abordar el problema de l afalta de precision a la hora de tomar los tiempos de ejecución de un algoritmo, para ello se nos presento una version del algoritmo de busqueda de orden $O(log_{2}(n))$ conocido como busqueda binaria. A continuacion demostraremos que en efecto el código proporcionado para las pruebas se corresponde con la citada eficiencia.
 
+\begin{lstlisting}
+  int operacion(int *v, int n, int x, int inf, int sup) {
+  int med;
+  bool enc=false;
+  while ((inf<sup) && (!enc)) {
+    med = (inf+sup)/2; 
+    if (v[med]==x) 
+      enc = true;
+    else if (v[med] < x) 
+      inf = med+1;
+    else
+      sup = med-1;
+  }
+  if (enc) 
+    return med;
+  else 
+    return -1;
+  }
+\end{lstlisting}
+
 \subsection{Calculo de la eficiencia teorica}
 
 Se puede ver claramente que el bucle while no es más que la definición de un log. Por lo tanto, la eficiencia sería $O(log_{2}(n))$
