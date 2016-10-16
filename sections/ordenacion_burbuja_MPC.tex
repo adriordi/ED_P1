@@ -3,17 +3,12 @@ El siguiente algoritmo que se ha anañizado ha sido la ordenacion de la burbuja 
 
 \subsection{Eficiencia teorica}
 
-\begin{equation}
-  T(n) = \sum_{i=0}^{n-1} (\sum_{j=0}^{n-i-1} (4+max(3+4+3,0))) = 14n^{2}
-\end{equation}
-
-Por lo que sabemos que el algoritmo tiene una O(n^2).
-
+% formula aqui
 
 \subsection{Eficiencia empirica}
 Para demostrar que en efecto el tiempo de ejecucion de nuestro algoritmo evoluciona conforme nos ha indicado la eficiencia teorica, se hicieron varias ejecuciones con dicho algoritmo para diferentes tamaños de entradas, obteniendo la siguiente grafica:
 
-\begin{figure}[ht]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{./Imagenes/burbuja_pela.png}
   \caption{Grafica con los tiempos de ejecucion del algoritmo bubble sort}
@@ -23,7 +18,7 @@ Para demostrar que en efecto el tiempo de ejecucion de nuestro algoritmo evoluci
 \subsection{Ajuste de la grafica con $f(x)=x^{2}$}
 Si procedemos a comprobar como se ajusta la eficiencia teorica con la grafica obtenida en el apartado anterior veremos como efectivamente se corresponde a la perfección con una gráfica de una funcion polinomica de grado 2, lo cual nos demuestra lo inficiente de este algoritmo en cuanto el tamaño de las entradas crece. La grafica es la que se muestra a continuación:
 
-\begin{figure}[ht]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{./Imagenes/burbuja_ajustada.png}
   \caption{Ajuste de la salida de bubble sort con $f(x)=x^{2}$}
@@ -32,7 +27,7 @@ Si procedemos a comprobar como se ajusta la eficiencia teorica con la grafica ob
 \subsection{Influencia del proceso de compilacion en la eficiencia empirica de un algoritmo}
 Como hemos comprobado en el anterior apartado, en efecto los tiempos de ejecucion del algoritmo en cuestion crecen en la medida que predijimos en el calculo teórico de la eficiencia, pero se nos plantea la duda de en que medida el proceso de compilación de nuestro programa, con lo cual se procedio a compilar el mismo programa con el que se habian obtenido los datos de las graficas anteriores, pero ahora se compilo usando el flag -O3 aplicando asi el compilador un mayor grado de optimización a las instrucciones maquina generadas. Tras enfrentar la grafica del programa optimizado a la grafica anterior se obtuvo los siguientes resultados que a continuación analizaremos:
 
-\begin{figure}[ht]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{./Imagenes/burbuja_vs_eficaz.png}
   \caption{Algoritmo sin optimizavion vs algoritmo con optimizacion}
@@ -66,6 +61,5 @@ Observamos en la siguiente gráfica la compración entre el tiempo (eje Y) respe
 \begin{figure}[ht]
   \centery
   \includegraphics[width=0.5\texwidth]{#ruta de la imagen#}
-  \caption{Datos de la comparación entre mejor y peor caso en el algorit
-mo bubble sort}
+  \caption{Datos de la comparación entre mejor y peor caso en el algoritmo bubble sort}
 \end{figure}
