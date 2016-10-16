@@ -51,11 +51,13 @@ En este algoritmo, el mejor caso es que el vector de datos esté ordenado, ya qu
 
 En la siguiente gráfica, tras hacer pruebas con distintos tamaños de entrada, se ve el tiempo (eje Y) en relación a la entrada de datos (eje X).
 
-%\begin{figure}[ht]
- % \centering
-  %\includegraphics[width=0.5\textwidth]{}
-  %\caption{Datos de la salida del algoritmo de ordenación por burbuja}
-%\end{figure}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./Imagenes/mejorCaso.png}
+  \caption{Datos de la salida del algoritmo de ordenación por burbuja}
+\end{figure}
+
+Donde se aprecia que con independencia del tamaño del vector que haya que ordenar el tiempo es practicamente constante, ya que se podria ajustar perfectamente a una recta, si obviamos las variaciones debidas a procesos del sistema operativo y otros aspectos que siempre afectan a estos analisis.
 
 \subsubsection{Peor caso}
 
@@ -63,8 +65,17 @@ Este caso se da si el vector de datos de entrada está ordenado inversamente, ya
 
 Observamos en la siguiente gráfica la compración entre el tiempo (eje Y) respecto del tamaño de datos de la entrada (eje X) del mejor y peor caso.
 
-%\begin{figure}[ht]
- % \centering
-  %\includegraphics[width=0.5\texwidth]{}
-  %\caption{Datos de la comparación entre mejor y peor caso en el algoritmo bubble sort}
-%\end{figure}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./Imagenes/peorCaso.png}
+  \caption{Peor caso en el algoritmo bubble sort}
+\end{figure}
+
+
+A continuacion se muestran las tres graficas enfrentadas, caso promedio, peor y mejor caso:
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./Imagenes/casosEnfrentados.png}
+  \caption{Casos enfrentados}
+\end{figure}
